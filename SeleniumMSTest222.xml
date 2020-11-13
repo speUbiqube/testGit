@@ -5,7 +5,7 @@
     <displayField>object_id</displayField>
     <serviceTaskType/>
     <order>0</order>
-    <visibility>0</visibility>
+    <visibility>5</visibility>
     <configType>xml</configType>
     <createTemplateId/>
     <createTemplateObject/>
@@ -27,7 +27,9 @@
   <variables frozen="0">
     <variable displayName="object_id" name="params.object_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
   </variables>
-  <example/>
+  <example>
+    <content>sampletext</content>
+  </example>
   <command name="IMPORT">
     <parser>
       <section>
@@ -37,10 +39,20 @@
       <lines/>
     </parser>
   </command>
-  <command name="CREATE"/>
-  <command name="READ"/>
-  <command name="UPDATE"/>
-  <command name="CONSTRAINT"/>
-  <command name="DELETE"/>
+  <command name="UPDATE">
+    <operation>sampletext</operation>
+  </command>
+  <command name="CONSTRAINT">
+    <operation>sampletext</operation>
+  </command>
+  <command name="CREATE">
+    <operation>sampletext</operation>
+  </command>
+  <command name="DELETE">
+    <operation>sampletext</operation>
+  </command>
+  <command name="READ">
+    <operation>sampletext</operation>
+  </command>
   <command name="LIST"/>
 </ObjectDefinition>
