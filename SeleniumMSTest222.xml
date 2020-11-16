@@ -5,8 +5,8 @@
     <displayField>object_id</displayField>
     <serviceTaskType/>
     <order>0</order>
-    <visibility>5</visibility>
-    <configType>xml</configType>
+    <visibility>0</visibility>
+    <configType>cli</configType>
     <createTemplateId/>
     <createTemplateObject/>
     <defaultDisplay>false</defaultDisplay>
@@ -26,6 +26,7 @@
   </information>
   <variables frozen="0">
     <variable displayName="object_id" name="params.object_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="stack_status" name="params.stack_status" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
   </variables>
   <example>
     <content>sampletext</content>
@@ -33,10 +34,43 @@
   <command name="IMPORT">
     <parser>
       <section>
-        <regexp>@^\s \s*$@</regexp>
-        <xpath></xpath>
+        <regexp>@^access-list\s+(?&lt;object_id&gt;.*)\s+extended\s+@</regexp>
+        <xpath/>
       </section>
-      <lines/>
+      <section>
+        <regexp>@^\s \s*$@</regexp>
+        <xpath/>
+      </section>
+      <section>
+        <regexp>@01234567890123456789012345678901234567890123456789012345678901234567890123456789@</regexp>
+        <xpath/>
+      </section>
+      <lines>
+        <line>
+          <array/>
+          <regexp>@&lt;hostname&gt;(&lt;hostname&gt;.*)&lt;hostname&gt;@</regexp>
+          <xpath/>
+        </line>
+        <line>
+          <array/>
+          <regexp>@&lt;nodeindex&gt;(&lt;nodeindex&gt;.*)&lt;nodeindex&gt;@</regexp>
+          <xpath/>
+        </line>
+        <line>
+          <array/>
+          <regexp>@&lt;stack_status&gt;(?&lt;stack_status&gt;.*)&lt;/stack_status&gt;@</regexp>
+          <xpath/>
+        </line>
+        <ignore>
+          <regexp>@@^\s+\S+.*$@@</regexp>
+        </ignore>
+        <ignore>
+          <regexp>@@^\s*$@@</regexp>
+        </ignore>
+        <ignore>
+          <regexp>@@^!.*$@@</regexp>
+        </ignore>
+      </lines>
     </parser>
   </command>
   <command name="UPDATE">
