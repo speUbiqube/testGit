@@ -5,7 +5,7 @@
     <displayField>object_id</displayField>
     <serviceTaskType/>
     <order>0</order>
-    <visibility>0</visibility>
+    <visibility>5</visibility>
     <configType>xml</configType>
     <createTemplateId/>
     <createTemplateObject/>
@@ -37,10 +37,12 @@
       <lines/>
     </parser>
   </command>
-  <command name="CREATE"/>
-  <command name="READ"/>
   <command name="UPDATE"/>
   <command name="CONSTRAINT"/>
+  <command name="CREATE">
+    <operation>touch ./ZDS/{$params.object_id}</operation>
+  </command>
   <command name="DELETE"/>
+  <command name="READ"/>
   <command name="LIST"/>
 </ObjectDefinition>
