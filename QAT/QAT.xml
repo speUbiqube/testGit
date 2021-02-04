@@ -1,0 +1,44 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="string" name="&lt;Name>" startIncrement="0" type="string" mandatoryArray="true" visible="true" description="string" groupSeparator="string" groupDisplayName="string" displayOrder="0" increment="0" refServiceURI="string" refDeviceIdVar="string" keepOnImport="true" editable="true" onlyDetailView="true" localVarNameMatch="string" remoteVarNameMatch="string" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" selector="string" defaultValueLong="0" displayNameHeader="string" fullDisplayName="string" default="string" isMandatory="true" isUserLocked="true" isGrouped="true" isSearchable="true" isUniqueGlobal="true">
+      <behaviors>
+        <behaviour displayName="QAT" displayOrder="string" maxLength="0" name="&lt;Name>" selectorValue="string" startIncrement="0" type="string"/>
+      </behaviors>
+      <indexVariables>
+        <var>string</var>
+      </indexVariables>
+      <sections>
+        <sections>string</sections>
+      </sections>
+      <classes>
+        <class>string</class>
+      </classes>
+      <values>
+        <values displayValue="string" displayValue_de="string" displayValue_en="string" displayValue_es="string" displayValue_fr="string" displayValue_ja="string">string</values>
+      </values>
+    </variable>
+  </variables>
+  <example>
+    <content>string</content>
+  </example>
+  <process name="&lt;Name>">
+    <displayName>QAT</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="string">
+      <processPath>string</processPath>
+      <displayName>QAT</displayName>
+    </task>
+  </process>
+  <information>
+    <icon>null</icon>
+    <description>null</description>
+    <displayField>service_id</displayField>
+    <serviceTaskType>php</serviceTaskType>
+    <order>10000</order>
+    <visibility>0</visibility>
+    <name>QAT</name>
+    <group>null</group>
+  </information>
+</ObjectDefinition>
