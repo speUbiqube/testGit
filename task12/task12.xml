@@ -75,6 +75,24 @@
       <processPath>/opt/fmc_repository/Process/workflows/task12/Process_abc_/Tasks</processPath>
       <displayName>111</displayName>
     </task>
+    <task name="Task_222.php">
+      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_abc_/Tasks</processPath>
+      <displayName>222</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/task12/Process_abc_">
+    <displayName>abc!</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task____.php">
+      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_abc_/Tasks</processPath>
+      <displayName>!!!</displayName>
+    </task>
+    <task name="Task_abc.php">
+      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_abc_/Tasks</processPath>
+      <displayName>abc</displayName>
+    </task>
   </process>
   <information>
     <icon/>
