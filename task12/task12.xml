@@ -27,6 +27,38 @@
       <processPath>/opt/fmc_repository/Process/workflows/task12/Process_AAAA/Tasks</processPath>
       <displayName>a_b</displayName>
     </task>
+    <task name="Task_宇うう.php">
+      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_AAAA/Tasks</processPath>
+      <displayName>宇うう</displayName>
+    </task>
+    <task name="Task_ううう.php">
+      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_AAAA/Tasks</processPath>
+      <displayName>ううう</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/task12/Process_abcd">
+    <displayName>abcd</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <process name="Process/workflows/task12/Process_abc_">
+    <displayName>abc-</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <process name="Process/workflows/task12/Process_abcう">
+    <displayName>abcう</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <process name="Process/workflows/task12/Process_abc_">
+    <displayName>abc(</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
   </process>
   <information>
     <icon/>
