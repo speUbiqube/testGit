@@ -71,6 +71,10 @@
     <type>CREATE</type>
     <visibility>5</visibility>
     <allowSchedule/>
+    <task name="Task_111.php">
+      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_abc_/Tasks</processPath>
+      <displayName>111</displayName>
+    </task>
   </process>
   <information>
     <icon/>
