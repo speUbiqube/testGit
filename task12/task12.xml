@@ -19,6 +19,14 @@
       <processPath>/opt/fmc_repository/Process/workflows/task12/Process_AAAA/Tasks</processPath>
       <displayName>checkVAr</displayName>
     </task>
+    <task name="Task_abc.php">
+      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_AAAA/Tasks</processPath>
+      <displayName>abc</displayName>
+    </task>
+    <task name="Task_a_b.php">
+      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_AAAA/Tasks</processPath>
+      <displayName>a_b</displayName>
+    </task>
   </process>
   <information>
     <icon/>
