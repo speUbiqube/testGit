@@ -19,7 +19,7 @@ function list_args()
    *
    * Add as many variables as needed
    */
-  create_var_def('ede', 'Integer');
+  create_var_def('int', 'Integer');
   create_var_def('compo', 'Composite');
 }
 
