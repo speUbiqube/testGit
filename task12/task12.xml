@@ -7,7 +7,6 @@
       </behaviors>
     </variable>
     <variable displayName="ede" name="params.int" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="2" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="check" name="params.check" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="2" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
   </variables>
   <example/>
   <process name="Process/workflows/task12/Process_AAAA">
@@ -18,68 +17,6 @@
     <task name="Task_.php">
       <processPath>/opt/fmc_repository/Process/workflows/task12/Process_AAAA/Tasks</processPath>
       <displayName></displayName>
-    </task>
-  </process>
-  <process name="Process/workflows/task12/Process_abcd">
-    <displayName>abcd</displayName>
-    <type>CREATE</type>
-    <visibility>5</visibility>
-    <allowSchedule/>
-  </process>
-  <process name="Process/workflows/task12/Process_abc_">
-    <displayName>abc-</displayName>
-    <type>CREATE</type>
-    <visibility>5</visibility>
-    <allowSchedule/>
-    <task name="Task_tas1.php">
-      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_abc_/Tasks</processPath>
-      <displayName>tas1</displayName>
-    </task>
-    <task name="Task_tas2.php">
-      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_abc_/Tasks</processPath>
-      <displayName>tas2</displayName>
-    </task>
-  </process>
-  <process name="Process/workflows/task12/Process_abcう">
-    <displayName>abcう</displayName>
-    <type>CREATE</type>
-    <visibility>5</visibility>
-    <allowSchedule/>
-    <task name="Task_あべせ.php">
-      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_abcう/Tasks</processPath>
-      <displayName>あべせ</displayName>
-    </task>
-    <task name="Task_感じ優しい.php">
-      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_abcう/Tasks</processPath>
-      <displayName>感じ優しい</displayName>
-    </task>
-  </process>
-  <process name="Process/workflows/task12/Process_abc_">
-    <displayName>abc(</displayName>
-    <type>CREATE</type>
-    <visibility>5</visibility>
-    <allowSchedule/>
-    <task name="Task_111.php">
-      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_abc_/Tasks</processPath>
-      <displayName>111</displayName>
-    </task>
-    <task name="Task_222.php">
-      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_abc_/Tasks</processPath>
-      <displayName>222</displayName>
-    </task>
-  </process>
-  <process name="Process/workflows/task12/Process_abc_">
-    <displayName>abc!</displayName>
-    <type>UPDATE</type>
-    <visibility>5</visibility>
-    <allowSchedule/>
-    <task name="Task____.php">
-      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_abc_/Tasks</processPath>
-      <displayName>!!!</displayName>
-    </task>
-    <task name="Task_abc.php">
-      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_abc_/Tasks</processPath>
-      <displayName>abc</displayName>
     </task>
   </process>
   <information>
