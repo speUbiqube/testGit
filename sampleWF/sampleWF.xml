@@ -37,6 +37,16 @@
     <visibility>5</visibility>
     <allowSchedule/>
   </process>
+  <process name="Process/workflows/sampleWF/Process_upd">
+    <displayName>upd</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_upd.php">
+      <processPath>/opt/fmc_repository/Process/workflows/sampleWF/Process_upd/Tasks</processPath>
+      <displayName>upd</displayName>
+    </task>
+  </process>
   <information>
     <icon/>
     <description/>
