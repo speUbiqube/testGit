@@ -75,6 +75,6 @@ if ($context['var_name2'] % 2 === 0) {
 /**
  * End of the task (choose one)
  */
-task_success('Task OK');
+task_success('Task OK var_name2= '+str($context['var_name2']));
 task_error('Task FAILED');
 ?>
