@@ -3,7 +3,7 @@
   <example/>
   <information>
     <icon/>
-    <description>test</description>
+    <description>test2</description>
     <displayField>service_id</displayField>
     <serviceTaskType>php</serviceTaskType>
     <order>10000</order>
