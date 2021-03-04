@@ -41,7 +41,7 @@
     <displayName>upd</displayName>
     <type>UPDATE</type>
     <visibility>5</visibility>
-    <allowSchedule/>
+    <allowSchedule>true</allowSchedule>
     <task name="Task_upd.php">
       <processPath>/opt/fmc_repository/Process/workflows/sampleWF/Process_upd/Tasks</processPath>
       <displayName>upd</displayName>
