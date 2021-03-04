@@ -21,6 +21,7 @@ function list_args()
    */
   create_var_def('var_name', 'String');
   create_var_def('var_name2', 'Integer');
+  sleep(1);
 }
 
 /**
