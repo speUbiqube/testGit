@@ -11,7 +11,7 @@
     <displayName>Proc</displayName>
     <type>CREATE</type>
     <visibility>5</visibility>
-    <allowSchedule/>
+    <allowSchedule>true</allowSchedule>
     <task name="Task_t1.php">
       <processPath>/opt/fmc_repository/Process/workflows/sampleWF/Process_Proc/Tasks</processPath>
       <displayName>t1</displayName>
@@ -35,7 +35,7 @@
     <displayName>tst&amp;d</displayName>
     <type>CREATE</type>
     <visibility>5</visibility>
-    <allowSchedule/>
+    <allowSchedule>true</allowSchedule>
   </process>
   <process name="Process/workflows/sampleWF/Process_upd">
     <displayName>upd</displayName>
