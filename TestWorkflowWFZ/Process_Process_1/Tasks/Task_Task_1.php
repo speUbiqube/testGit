@@ -21,7 +21,7 @@ function list_args()
    */
   create_var_def('var_name', 'String');
   create_var_def('var_name2', 'Integer');
-  sleep(1);
+
 }
 
 /**
@@ -37,7 +37,7 @@ function list_args()
  * Such cases need to be handled as per the Task logic
  */
 check_mandatory_param('var_name');
-
+sleep(10);
 /**
  * $context => Service Context variable per Service Instance
  * All the user-inputs of Tasks are automatically stored in $context
@@ -48,6 +48,8 @@ check_mandatory_param('var_name');
  * ENTER YOUR CODE HERE
  */
 $context['var_name2'] = $context['var_name2'] + 1;
+
+
 
 /**
  * Format of the Task response :
