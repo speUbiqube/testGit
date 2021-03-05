@@ -21,7 +21,7 @@
     <serviceTaskType>php</serviceTaskType>
     <order>10000</order>
     <visibility>5</visibility>
-    <name>TestQAWorkflowWFZbyAdmin</name>
+    <name>TestQAWorkflowWFZbyAdminaaaa</name>
     <group/>
   </information>
 </ObjectDefinition>
