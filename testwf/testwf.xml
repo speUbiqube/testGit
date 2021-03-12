@@ -5,7 +5,7 @@
   <example/>
   <information>
     <icon/>
-    <description></description>
+    <description/>
     <displayField>service_id</displayField>
     <serviceTaskType>python</serviceTaskType>
     <order>10000</order>
