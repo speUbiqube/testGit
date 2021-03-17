@@ -13,6 +13,16 @@
       <displayName>sleep</displayName>
     </task>
   </process>
+  <process name="Process/workflows/just_sleep_2_/Process_deleteme">
+    <displayName>deleteme</displayName>
+    <type>DELETE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_plopme.php">
+      <processPath>/opt/fmc_repository/Process/workflows/just_sleep_2_/Process_deleteme/Tasks</processPath>
+      <displayName>plopme</displayName>
+    </task>
+  </process>
   <information>
     <icon/>
     <description/>
