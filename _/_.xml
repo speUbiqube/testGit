@@ -20,7 +20,7 @@
     <serviceTaskType>php</serviceTaskType>
     <order>10000</order>
     <visibility>5</visibility>
-    <name>_</name>
+    <name>Test</name>
     <group/>
   </information>
 </ObjectDefinition>
