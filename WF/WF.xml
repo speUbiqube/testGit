@@ -2,7 +2,7 @@
   <variables frozen="0"/>
   <example/>
   <process name="Process/workflows/WF/Process_wert_">
-    <displayName>wert_</displayName>
+    <displayName>wert_片仮名</displayName>
     <type>CREATE</type>
     <visibility>5</visibility>
     <allowSchedule/>
