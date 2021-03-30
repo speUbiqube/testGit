@@ -8,7 +8,7 @@
     <serviceTaskType>php</serviceTaskType>
     <order>10000</order>
     <visibility>5</visibility>
-    <name>WF</name>
+    <name>W#rt</name>
     <group/>
   </information>
 </ObjectDefinition>
