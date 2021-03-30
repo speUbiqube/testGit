@@ -14,6 +14,10 @@
       <processPath>/opt/fmc_repository/Process/workflows/WF/Process_wert_/Tasks</processPath>
       <displayName>_</displayName>
     </task>
+    <task name="Task_片仮名.php">
+      <processPath>/opt/fmc_repository/Process/workflows/WF/Process_wert_/Tasks</processPath>
+      <displayName>片仮名</displayName>
+    </task>
   </process>
   <process name="Process/workflows/WF/Process__">
     <displayName>_</displayName>
