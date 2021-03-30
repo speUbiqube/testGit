@@ -1,6 +1,12 @@
 <ObjectDefinition>
   <variables frozen="0"/>
   <example/>
+  <process name="Process/workflows/WF/Process_wert_">
+    <displayName>wert_</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
   <information>
     <icon/>
     <description/>
@@ -8,7 +14,7 @@
     <serviceTaskType>php</serviceTaskType>
     <order>10000</order>
     <visibility>5</visibility>
-    <name>W#rt</name>
+    <name>WF!@#$%^&amp;*()_+{}|:"&lt;&gt;?;',../``</name>
     <group/>
   </information>
 </ObjectDefinition>
