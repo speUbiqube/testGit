@@ -23,6 +23,20 @@
       <displayName>plopme</displayName>
     </task>
   </process>
+  <process name="Process/workflows/just_sleep_2_/Process_Update_sleep">
+    <displayName>Update_sleep</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_sleep.php">
+      <processPath>/opt/fmc_repository/Process/workflows/just_sleep_2_/Process_Update_sleep/Tasks</processPath>
+      <displayName>sleep</displayName>
+    </task>
+    <task name="Task_sleep2.php">
+      <processPath>/opt/fmc_repository/Process/workflows/just_sleep_2_/Process_Update_sleep/Tasks</processPath>
+      <displayName>sleep2</displayName>
+    </task>
+  </process>
   <information>
     <icon/>
     <description/>
