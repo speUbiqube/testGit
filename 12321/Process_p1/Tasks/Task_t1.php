@@ -21,6 +21,7 @@ function list_args()
    */
   create_var_def('var_name', 'String');
   create_var_def('var_name2', 'Integer');
+  create_var_def('me', 'Device');
 }
 
 /**
@@ -36,6 +37,7 @@ function list_args()
  * Such cases need to be handled as per the Task logic
  */
 check_mandatory_param('var_name');
+check_mandatory_param('me');
 
 /**
  * $context => Service Context variable per Service Instance
