@@ -19,8 +19,8 @@ function list_args()
    *
    * Add as many variables as needed
    */
-  create_var_def('var_name', 'String');
-  create_var_def('var_name2', 'Integer');
+  create_var_def('v1', 'Managed Entity');
+  
 }
 
 /**
@@ -35,7 +35,7 @@ function list_args()
  * For ex. if (empty($context['var_name']) || (empty($context['var_name2']) && empty($context['var_name3']))) => FAIL [Don't proceed]
  * Such cases need to be handled as per the Task logic
  */
-check_mandatory_param('var_name');
+check_mandatory_param('v1');
 
 /**
  * $context => Service Context variable per Service Instance
