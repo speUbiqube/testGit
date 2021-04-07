@@ -46,8 +46,7 @@ check_mandatory_param('v1');
  *
  * ENTER YOUR CODE HERE
  */
-$context['var_name2'] = $context['var_name2'] + 1;
-
+$context['device_id'] = substr($context['v1'], 3);
 /**
  * Format of the Task response :
  * JSON format : {"wo_status":"status","wo_comment":"comment","wo_newparams":{json_body}}
@@ -66,11 +65,11 @@ $context['var_name2'] = $context['var_name2'] + 1;
  * The response "$ret" should be echoed from the Task "echo $ret" which is read by Orchestration Engine
  * In case of FAILURE/WARNING, the Task can be Terminated by calling "exit" as per Logic
  */
-if ($context['var_name2'] % 2 === 0) {
+/*if ($context['var_name2'] % 2 === 0) {
 	$ret = prepare_json_response(FAILED, 'Task Failed', $context, true);
 	echo "$ret\n";
 	exit;
-}
+}*/
 
 /**
  * End of the task (choose one)
