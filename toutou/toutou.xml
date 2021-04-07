@@ -10,13 +10,13 @@
     </variable>
   </variables>
   <example/>
-  <process name="Process/workflows/toutou/Process_t1">
-    <displayName>t1</displayName>
-    <type>CREATE</type>
+  <process name="Process/workflows/toutou/Process_p1">
+    <displayName>p1</displayName>
+    <type>UPDATE</type>
     <visibility>5</visibility>
     <allowSchedule/>
     <task name="Task_t1.php">
-      <processPath>/opt/fmc_repository/Process/workflows/toutou/Process_t1/Tasks</processPath>
+      <processPath>/opt/fmc_repository/Process/workflows/toutou/Process_p1/Tasks</processPath>
       <displayName>t1</displayName>
     </task>
   </process>
