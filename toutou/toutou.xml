@@ -1,13 +1,6 @@
 <ObjectDefinition>
   <variables frozen="0">
-    <variable displayName="v1" name="params.v1" startIncrement="0" type="Managed Entity" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
-      <sections>
-        <sections> </sections>
-      </sections>
-      <sdTypes>
-        <sdTypes manId="14020601" modId="14020601"/>
-      </sdTypes>
-    </variable>
+    <variable displayName="v1" name="params.v1" startIncrement="0" type="Managed Entity" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
   </variables>
   <example/>
   <process name="Process/workflows/toutou/Process_p1">
@@ -15,9 +8,9 @@
     <type>UPDATE</type>
     <visibility>5</visibility>
     <allowSchedule/>
-    <task name="Task_t1.php">
+    <task name="Task_task1.php">
       <processPath>/opt/fmc_repository/Process/workflows/toutou/Process_p1/Tasks</processPath>
-      <displayName>t1</displayName>
+      <displayName>task1</displayName>
     </task>
   </process>
   <information>
