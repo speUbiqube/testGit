@@ -13,6 +13,10 @@
       <processPath>/opt/fmc_repository/Process/workflows/test12341/Process_task1/Tasks</processPath>
       <displayName>check</displayName>
     </task>
+    <task name="Task_check_again.php">
+      <processPath>/opt/fmc_repository/Process/workflows/test12341/Process_task1/Tasks</processPath>
+      <displayName>check_again</displayName>
+    </task>
   </process>
   <information>
     <icon/>
