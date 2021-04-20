@@ -30,7 +30,7 @@ if (strlen($fw_name) > 6 ){
  $message = " Firwall name is tooooooooooooooooooooooooooooooooo lonnngggggggggggg" . strlen($fw_name);
 }
 else{
- $message = "hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo " . strlen($fw_name);
+ $message = "name length is great" . strlen($fw_name);
 }
 
 sleep(4);
