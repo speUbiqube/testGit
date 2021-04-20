@@ -19,7 +19,7 @@ if ($fw_name == ' '){
  task_error("firewall name contain blankspace --->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> checkkkkk");
 }
 sleep(3);
-sleep($context['sleep']);
+
 /**
  * End of the task do not modify after this point
  */
