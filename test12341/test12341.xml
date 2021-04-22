@@ -21,7 +21,7 @@
   </process>
   <process name="Process/workflows/test12341/Process_task2">
     <displayName>task2</displayName>
-    <type>CREATE</type>
+    <type>UPDATE</type>
     <visibility>5</visibility>
     <allowSchedule/>
     <task name="Task_check_twice.php">
