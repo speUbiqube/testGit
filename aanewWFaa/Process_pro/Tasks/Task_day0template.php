@@ -22,7 +22,7 @@ $uris = "Configuration/PA_initial_config"
 //	$uris_array[$index++] = $uri;
 //}
 //$position = $context['position'];
-$response = _device_configuration_attach_files_to_device($device_id, "Configuration/PA_initial_config", "");
+$response = _device_configuration_attach_files_to_device($device_id, "Configuration/PA_initial_config", "AUTO");
 //$response = _device_configuration_attach_files_to_device($device_id, $uris_array, $position);
 $response = json_decode($response, true);
 if ($response['wo_status'] !== ENDED || $response['wo_newparams'] !== "") {
