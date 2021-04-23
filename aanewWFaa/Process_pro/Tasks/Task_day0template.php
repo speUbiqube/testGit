@@ -17,7 +17,7 @@ $device_id=195023;
 $uris = "Configuration/PA_initial_config"
   //$context['uris'];
 //$uris_array = array();
-$index = 0;
+//$index = 0;
 //foreach ($uris as $uri) {
 //	$uris_array[$index++] = $uri;
 //}
