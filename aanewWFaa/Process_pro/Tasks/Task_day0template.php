@@ -13,8 +13,9 @@ function list_args()
 //check_mandatory_param('position');
 
 $device_id=195023;
-$device_id=getIdFromUbiId ($device_id);
-$uris = $context['uris'];
+//$device_id=getIdFromUbiId ($device_id);
+$uris = "Configuration/PA_initial_config"
+  //$context['uris'];
 $uris_array = array();
 $index = 0;
 foreach ($uris as $uri) {
