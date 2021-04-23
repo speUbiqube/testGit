@@ -16,13 +16,14 @@ $device_id=195023;
 //$device_id=getIdFromUbiId ($device_id);
 $uris = "Configuration/PA_initial_config"
   //$context['uris'];
-$uris_array = array();
+//$uris_array = array();
 $index = 0;
-foreach ($uris as $uri) {
-	$uris_array[$index++] = $uri;
-}
+//foreach ($uris as $uri) {
+//	$uris_array[$index++] = $uri;
+//}
 $position = $context['position'];
-$response = _device_configuration_attach_files_to_device($device_id, $uris_array, $position);
+$response = _device_configuration_attach_files_to_device($device_id, "Configuration/PA_initial_config", $position);
+//$response = _device_configuration_attach_files_to_device($device_id, $uris_array, $position);
 $response = json_decode($response, true);
 if ($response['wo_status'] !== ENDED || $response['wo_newparams'] !== "") {
 	$response = json_encode($response);
