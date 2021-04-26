@@ -14,6 +14,10 @@
       <processPath>/opt/fmc_repository/Process/workflows/thenewWF/Process___/Tasks</processPath>
       <displayName>&amp;pp</displayName>
     </task>
+    <task name="Task_ttt.php">
+      <processPath>/opt/fmc_repository/Process/workflows/thenewWF/Process___/Tasks</processPath>
+      <displayName>ttt</displayName>
+    </task>
   </process>
   <information>
     <icon/>
