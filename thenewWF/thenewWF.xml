@@ -42,6 +42,10 @@
       <processPath>/opt/fmc_repository/Process/workflows/thenewWF/Process___/Tasks</processPath>
       <displayName>task13</displayName>
     </task>
+    <task name="Task_task13.php">
+      <processPath>/opt/fmc_repository/Process/workflows/thenewWF/Process___/Tasks</processPath>
+      <displayName>task13</displayName>
+    </task>
   </process>
   <process name="Process/workflows/thenewWF/Process______">
     <displayName>&amp;&amp;&amp;&amp;&amp;</displayName>
