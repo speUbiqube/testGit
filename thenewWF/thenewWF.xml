@@ -18,6 +18,34 @@
       <processPath>/opt/fmc_repository/Process/workflows/thenewWF/Process___/Tasks</processPath>
       <displayName>ttt</displayName>
     </task>
+    <task name="Task_task13.php">
+      <processPath>/opt/fmc_repository/Process/workflows/thenewWF/Process___/Tasks</processPath>
+      <displayName>task13</displayName>
+    </task>
+    <task name="Task_aaa.php">
+      <processPath>/opt/fmc_repository/Process/workflows/thenewWF/Process___/Tasks</processPath>
+      <displayName>aaa</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/thenewWF/Process______">
+    <displayName>&amp;&amp;&amp;&amp;&amp;</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <process name="Process/workflows/thenewWF/Process___">
+    <displayName>((</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_task12.php">
+      <processPath>/opt/fmc_repository/Process/workflows/thenewWF/Process___/Tasks</processPath>
+      <displayName>task12</displayName>
+    </task>
+    <task name="Task___.php">
+      <processPath>/opt/fmc_repository/Process/workflows/thenewWF/Process___/Tasks</processPath>
+      <displayName>((</displayName>
+    </task>
   </process>
   <information>
     <icon/>
