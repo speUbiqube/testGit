@@ -10,6 +10,10 @@
       <processPath>/opt/fmc_repository/Process/workflows/thenewWFpython/Process_ppp/Tasks</processPath>
       <displayName>taskname</displayName>
     </task>
+    <task name="Task_task2.py">
+      <processPath>/opt/fmc_repository/Process/workflows/thenewWFpython/Process_ppp/Tasks</processPath>
+      <displayName>task2</displayName>
+    </task>
   </process>
   <information>
     <icon/>
