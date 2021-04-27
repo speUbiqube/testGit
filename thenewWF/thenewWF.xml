@@ -76,6 +76,10 @@
       <processPath>/opt/fmc_repository/Process/workflows/thenewWF/Process_TEST/Tasks</processPath>
       <displayName>Attach_day0Template</displayName>
     </task>
+    <task name="Task_attach_day_0_template.php">
+      <processPath>/opt/fmc_repository/Process/workflows/thenewWF/Process_TEST/Tasks</processPath>
+      <displayName>attach_day_0_template</displayName>
+    </task>
   </process>
   <information>
     <icon/>
