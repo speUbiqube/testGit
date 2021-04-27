@@ -8,7 +8,7 @@ function list_args()
 	create_var_def('position', 'String'); // PRE_CONFIG, POST_CONFIG, AUTO
 }
 
-check_mandatory_param('device_id');
+//check_mandatory_param('device_id');
 //check_mandatory_param('uris');
 //check_mandatory_param('position');
 
