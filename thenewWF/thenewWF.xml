@@ -3,7 +3,7 @@
   <example/>
   <process name="Process/workflows/thenewWF/Process___">
     <displayName>^^</displayName>
-    <type>CREATE</type>
+    <type>UPDATE</type>
     <visibility>5</visibility>
     <allowSchedule/>
     <task name="Task__ttt.php">
@@ -49,13 +49,13 @@
   </process>
   <process name="Process/workflows/thenewWF/Process______">
     <displayName>&amp;&amp;&amp;&amp;&amp;</displayName>
-    <type>CREATE</type>
+    <type>UPDATE</type>
     <visibility>5</visibility>
     <allowSchedule/>
   </process>
   <process name="Process/workflows/thenewWF/Process___">
     <displayName>((</displayName>
-    <type>CREATE</type>
+    <type>UPDATE</type>
     <visibility>5</visibility>
     <allowSchedule/>
     <task name="Task_task12.php">
