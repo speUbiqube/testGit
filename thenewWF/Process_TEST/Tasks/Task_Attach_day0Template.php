@@ -21,7 +21,8 @@ $index = 0;
 foreach ($uris as $uri) {
 	$uris_array[$index++] = $uri;
 }
-$position = $context['position'];
+//$position = $context['position'];
+$position = 'AUTO';
 $response = _device_configuration_attach_files_to_device($device_id, $uris_array, $position);
 $response = json_decode($response, true);
 if ($response['wo_status'] !== ENDED || $response['wo_newparams'] !== "") {
