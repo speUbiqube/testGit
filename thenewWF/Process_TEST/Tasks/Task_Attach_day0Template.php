@@ -12,8 +12,8 @@ check_mandatory_param('device_id');
 //check_mandatory_param('uris');
 //check_mandatory_param('position');
 
-$device_id=$context['device_id'];
-$device_id=getIdFromUbiId ($device_id);
+//$device_id=$context['device_id'];
+//$device_id=getIdFromUbiId ($device_id);
 //$uris = $context['uris'];
 $uris = 'Configuration/PA_initial_config';
 $uris_array = array();
@@ -23,7 +23,7 @@ foreach ($uris as $uri) {
 }
 //$position = $context['position'];
 $position = 'AUTO';
-$response = _device_configuration_attach_files_to_device($device_id, $uris_array, $position);
+$response = _device_configuration_attach_files_to_device('199531', $uris_array, $position);
 $response = json_decode($response, true);
 if ($response['wo_status'] !== ENDED || $response['wo_newparams'] !== "") {
 	$response = json_encode($response);
