@@ -15,7 +15,7 @@ function list_args()
 //$device_id=$context['device_id'];
 //$device_id=getIdFromUbiId ($device_id);
 //$uris = $context['uris'];
-$uris = 'uris';
+$uris = 'Configuration/PA_initial_config';
 $uris_array = array();
 $index = 0;
 foreach ($uris as $uri) {
