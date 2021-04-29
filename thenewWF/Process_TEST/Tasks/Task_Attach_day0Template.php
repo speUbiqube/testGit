@@ -4,7 +4,7 @@ require_once '/opt/fmc_repository/Process/Reference/Common/common.php';
 
 function list_args()
 {
-	create_var_def('uris.0.uri', 'String'); // Configuration/MSA/...
+	//create_var_def('uris.0.uri', 'String'); // Configuration/MSA/...
 	create_var_def('position', 'String'); // PRE_CONFIG, POST_CONFIG, AUTO
 }
 
