@@ -22,7 +22,7 @@ $index = 0;
 //foreach ($uris as $uri) {
 //	$uris_array[$index++] = $uri;
 //}
-$uris_array[0] = $uri;
+$uris_array = array($uri);
 //$position = $context['position'];
 $position = 'AUTO';
 $response = _device_configuration_attach_files_to_device('199531', $uris_array, $position);
