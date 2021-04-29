@@ -15,13 +15,14 @@ function list_args()
 //$device_id=$context['device_id'];
 //$device_id=getIdFromUbiId ($device_id);
 //$uris = $context['uris'];
-$uris = 'Configuration/PA_initial_config';
+//$uris = 'Configuration/PA_initial_config';
 $uri = 'Configuration/PA_initial_config';
 $uris_array = array();
 $index = 0;
-foreach ($uris as $uri) {
-	$uris_array[$index++] = $uri;
-}
+//foreach ($uris as $uri) {
+//	$uris_array[$index++] = $uri;
+//}
+$uris_array[0] = $uri;
 //$position = $context['position'];
 $position = 'AUTO';
 $response = _device_configuration_attach_files_to_device('199531', $uris_array, $position);
