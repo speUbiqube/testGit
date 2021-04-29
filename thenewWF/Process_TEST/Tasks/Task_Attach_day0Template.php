@@ -26,8 +26,7 @@ $index = 0;
 $uris_array[0] = array("uri" => "Configuration/PA_initial_config");
 //$position = $context['position'];
 $position = 'AUTO';
-//$response = _device_configuration_attach_files_to_device('199531', $uris_array, $position);
-$response = _device_configuration_attach_files_to_device('199531', "Configuration/PA_initial_config", $position);
+$response = _device_configuration_attach_files_to_device('199531', $uris_array, $position);
 $response = json_decode($response, true);
 if ($response['wo_status'] !== ENDED || $response['wo_newparams'] !== "") {
 	$response = json_encode($response);
