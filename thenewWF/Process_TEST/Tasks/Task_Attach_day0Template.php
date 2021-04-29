@@ -20,9 +20,10 @@ $uri = 'Configuration/PA_initial_config';
 //$uris_array = array();
 $index = 0;
 //foreach ($uris as $uri) {
-//	$uris_array[$index++] = $uri;
+  //uri = hasj array ('uri'=> 'Configuration/PA_initial_config', 'test'=>'dfdfs')
+  //$uris_array[$index++] = $uri;
 //}
-$uris_array[0] = "Configuration/PA_initial_config";
+$uris_array[0] = array("uri" => "Configuration/PA_initial_config");
 //$position = $context['position'];
 $position = 'AUTO';
 //$response = _device_configuration_attach_files_to_device('199531', $uris_array, $position);
