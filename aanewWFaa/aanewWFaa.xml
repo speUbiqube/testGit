@@ -5,7 +5,7 @@
     <displayName>pro</displayName>
     <type>CREATE</type>
     <visibility>5</visibility>
-    <allowSchedule/>
+    <allowSchedule>true</allowSchedule>
     <task name="Task_day0template.php">
       <processPath>/opt/fmc_repository/Process/workflows/aanewWFaa/Process_pro/Tasks</processPath>
       <displayName>day0template</displayName>
