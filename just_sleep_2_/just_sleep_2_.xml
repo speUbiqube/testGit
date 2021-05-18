@@ -37,6 +37,20 @@
       <displayName>sleep2</displayName>
     </task>
   </process>
+  <process name="Process/workflows/just_sleep_2_/Process_update_twice">
+    <displayName>update_twice</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_1.php">
+      <processPath>/opt/fmc_repository/Process/workflows/just_sleep_2_/Process_update_twice/Tasks</processPath>
+      <displayName>1</displayName>
+    </task>
+    <task name="Task_2.php">
+      <processPath>/opt/fmc_repository/Process/workflows/just_sleep_2_/Process_update_twice/Tasks</processPath>
+      <displayName>2</displayName>
+    </task>
+  </process>
   <information>
     <icon/>
     <description/>
