@@ -13,6 +13,16 @@
       <displayName>Task</displayName>
     </task>
   </process>
+  <process name="Process/workflows/WF_test_context/Process_Update">
+    <displayName>Update</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_task.py">
+      <processPath>/opt/fmc_repository/Process/workflows/WF_test_context/Process_Update/Tasks</processPath>
+      <displayName>task</displayName>
+    </task>
+  </process>
   <information>
     <icon/>
     <description/>
