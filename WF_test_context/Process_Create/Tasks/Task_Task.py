@@ -16,8 +16,6 @@ The allowed types are:
  Add as many variables as needed
 '''
 dev_var = Variables()
-dev_var.add('var', var_type='String')
-
 '''
 context => Service Context variable per Service Instance
 All the user-inputs of Tasks are automatically stored in context
@@ -48,6 +46,6 @@ NOTE : For 'wo_newparams', always pass "context" [whether wo_status is ENDED/FAI
 The response "ret" should be echoed from the Task "print(ret)" which is read by Orchestration Engine
 In case of FAILURE/WARNING, the Task can be Terminated by calling "exit" as per Logic
 '''
-ret = MSA_API.process_content('ENDED', 'Task OK, var='.context['var'], context, True)
+ret = MSA_API.process_content('ENDED', 'Task OK, var='+context['var'], context, True)
 print(ret)
 
