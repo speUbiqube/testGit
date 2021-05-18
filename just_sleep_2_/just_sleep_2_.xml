@@ -4,7 +4,7 @@
   </variables>
   <example/>
   <process name="Process/workflows/just_sleep_2_/Process_sleep">
-    <displayName>sleep</displayName>
+    <displayName>sleepdgfdghdfhdhfhrtyhrtdhyerygdfgdfgdfgdfg</displayName>
     <type>CREATE</type>
     <visibility>5</visibility>
     <allowSchedule>true</allowSchedule>
@@ -40,7 +40,7 @@
   <information>
     <icon/>
     <description/>
-    <displayField>service_id</displayField>
+    <displayField>sleep</displayField>
     <serviceTaskType>php</serviceTaskType>
     <order>10000</order>
     <visibility>5</visibility>
