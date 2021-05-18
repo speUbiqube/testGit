@@ -7,6 +7,6 @@ function list_args()
   create_var_def('sleep', 'Integer');
 }
 
-sleep($context['sleepvcxvxcvxcvxcvxcvcvxcvxcvxcvxcvxvx']);
+sleep($context['sleep']);
 task_success('Task OKxzcxzxzxzxzvxzvxzvzxvzxvzxvzxvxzvzxvzxvvxzvzxvzxvzxvxvxzvxzvxzvzxvzxvxzvxzvvzxvvxxzvxzvxzvzvxzvzvvxzvzxvzxvxzvxzvxvvvxvvvzvzvzxvxzvsefewfdsvsdfsdfsfdffsd');
 ?>
