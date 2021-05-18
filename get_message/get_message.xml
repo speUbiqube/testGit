@@ -13,6 +13,16 @@
       <displayName>get message</displayName>
     </task>
   </process>
+  <process name="Process/workflows/get_message/Process_get_message">
+    <displayName>get message</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_get_message.py">
+      <processPath>/opt/fmc_repository/Process/workflows/get_message/Process_get_message/Tasks</processPath>
+      <displayName>get message</displayName>
+    </task>
+  </process>
   <information>
     <icon/>
     <description/>
