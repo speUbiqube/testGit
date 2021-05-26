@@ -5,7 +5,7 @@
     <displayName>ppp</displayName>
     <type>CREATE</type>
     <visibility>5</visibility>
-    <allowSchedule/>
+    <allowSchedule>true</allowSchedule>
     <task name="Task_taskname.py">
       <processPath>/opt/fmc_repository/Process/workflows/thenewWFpython/Process_ppp/Tasks</processPath>
       <displayName>taskname</displayName>
