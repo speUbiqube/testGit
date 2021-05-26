@@ -9,7 +9,7 @@
     <displayName>task1</displayName>
     <type>CREATE</type>
     <visibility>5</visibility>
-    <allowSchedule/>
+    <allowSchedule>true</allowSchedule>
     <task name="Task_check.php">
       <processPath>/opt/fmc_repository/Process/workflows/test12341/Process_task1/Tasks</processPath>
       <displayName>check</displayName>
