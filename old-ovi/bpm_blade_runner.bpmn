@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="PLACEHOLDER_PROCESS_ID" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_0yjq93l</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="Event_0i5h8dp">
+      <bpmn:incoming>Flow_1bptkwb</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0yjq93l" sourceRef="StartEvent_1" targetRef="Activity_01ejlo9" />
+    <bpmn:sequenceFlow id="Flow_1bptkwb" sourceRef="Activity_01ejlo9" targetRef="Event_0i5h8dp" />
+    <bpmn:serviceTask id="Activity_01ejlo9" name="Create Firewall Service (Simple Firewall (Python))" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">{"ubiqubeId":"PLACEHOLDER_UBIQUBE_ID","serviceName":"Process/Tutorials/python/Simple_Firewall/Simple_Firewall","processName":"Process/Tutorials/python/Simple_Firewall/Create_Firewall_Service","processType":"CREATE","processVariables":{"id":"","src_ip":"","dst_port":""},"resumeOnFail":false}</camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0yjq93l</bpmn:incoming>
+      <bpmn:outgoing>Flow_1bptkwb</bpmn:outgoing>
+    </bpmn:serviceTask>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLACEHOLDER_PROCESS_ID">
+      <bpmndi:BPMNEdge id="Flow_0yjq93l_di" bpmnElement="Flow_0yjq93l">
+        <di:waypoint x="209" y="120" />
+        <di:waypoint x="240" y="120" />
+        <di:waypoint x="240" y="140" />
+        <di:waypoint x="270" y="140" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1bptkwb_di" bpmnElement="Flow_1bptkwb">
+        <di:waypoint x="370" y="140" />
+        <di:waypoint x="416" y="140" />
+        <di:waypoint x="416" y="120" />
+        <di:waypoint x="462" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="173" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0i5h8dp_di" bpmnElement="Event_0i5h8dp">
+        <dc:Bounds x="462" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1608286075524_di" bpmnElement="Activity_01ejlo9">
+        <dc:Bounds x="270" y="100" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

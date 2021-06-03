@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="PLACEHOLDER_PROCESS_ID" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1" />
+    <bpmn:intermediateCatchEvent id="Event_13547du">
+      <bpmn:signalEventDefinition id="SignalEventDefinition_07uqn5o" signalRef="Signal_07uqn5o" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:intermediateCatchEvent id="Event_0q32idr">
+      <bpmn:signalEventDefinition id="SignalEventDefinition_01vfnzc" signalRef="Signal_01vfnzc" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:endEvent id="Event_1vqdyyp" />
+  </bpmn:process>
+  <bpmn:signal id="Signal_07uqn5o" name="Signal_07uqn5o" />
+  <bpmn:signal id="Signal_01vfnzc" name="Signal_01vfnzc" />
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLACEHOLDER_PROCESS_ID">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="173" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_13547du_di" bpmnElement="Event_13547du">
+        <dc:Bounds x="312" y="182" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0q32idr_di" bpmnElement="Event_0q32idr">
+        <dc:Bounds x="592" y="142" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1vqdyyp_di" bpmnElement="Event_1vqdyyp">
+        <dc:Bounds x="422" y="242" width="36" height="36" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

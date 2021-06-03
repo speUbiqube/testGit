@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="PLACEHOLDER_PROCESS_ID" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1" name="Start Event">
+      <bpmn:outgoing>Flow_1ba4dw4</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:serviceTask id="Activity_1wqg4f2" name="upd (Customer_Python_SDK)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">PLACEHOLDER_UBIQUBE_ID</camunda:entry>
+              <camunda:entry key="serviceName">Process/SDC/Customer/WF_SDK_Python</camunda:entry>
+              <camunda:entry key="serviceInstanceId">27801</camunda:entry>
+              <camunda:entry key="processName">Process/SDC/Customer/Process_upd</camunda:entry>
+              <camunda:entry key="processType">UPDATE</camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="SERVICEINSTANCEREFERENCE">CPESID27801</camunda:entry>
+                  <camunda:entry key="TASKID">1</camunda:entry>
+                  <camunda:entry key="PROCESSINSTANCEID">121325</camunda:entry>
+                  <camunda:entry key="TASKINSTANCEID">123593</camunda:entry>
+                  <camunda:entry key="service_id">27801</camunda:entry>
+                  <camunda:entry key="EXECNUMBER">1</camunda:entry>
+                  <camunda:entry key="customer_name">blabla</camunda:entry>
+                  <camunda:entry key="UBIQUBEID">CPEA992</camunda:entry>
+                  <camunda:entry key="customer_id">5593</camunda:entry>
+                  <camunda:entry key="SERVICEINSTANCEID">27801</camunda:entry>
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail" />
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1ba4dw4</bpmn:incoming>
+      <bpmn:outgoing>Flow_1gsa91e</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:endEvent id="Event_1q7bv3s" name="End Event">
+      <bpmn:incoming>Flow_1fs5tqs</bpmn:incoming>
+      <bpmn:incoming>Flow_17f8nuh</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1ba4dw4" sourceRef="StartEvent_1" targetRef="Activity_1wqg4f2" />
+    <bpmn:exclusiveGateway id="Gateway_1qhj7w2" name="Gateway_1qhj7w2">
+      <bpmn:incoming>Flow_1gsa91e</bpmn:incoming>
+      <bpmn:outgoing>Flow_0i73c9a</bpmn:outgoing>
+      <bpmn:outgoing>Flow_17f8nuh</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="Flow_1gsa91e" sourceRef="Activity_1wqg4f2" targetRef="Gateway_1qhj7w2" />
+    <bpmn:sequenceFlow id="Flow_0i73c9a" sourceRef="Gateway_1qhj7w2" targetRef="Activity_0hl4lpq" />
+    <bpmn:sequenceFlow id="Flow_1fs5tqs" sourceRef="Activity_0hl4lpq" targetRef="Event_1q7bv3s" />
+    <bpmn:sequenceFlow id="Flow_17f8nuh" sourceRef="Gateway_1qhj7w2" targetRef="Event_1q7bv3s" />
+    <bpmn:serviceTask id="Activity_0hl4lpq" name="upd (Customer_Python_SDK)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">
+                <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceName">
+                <camunda:value>Process/SDC/Customer/WF_SDK_Python</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceInstanceId">
+                <camunda:value>22548</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processName">
+                <camunda:value>Process/SDC/Customer/Process_upd</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processType">
+                <camunda:value>UPDATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="SERVICEINSTANCEREFERENCE">
+                    <camunda:value>CPESID22548</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="TASKID">
+                    <camunda:value>1</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="PROCESSINSTANCEID">
+                    <camunda:value>22780</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="TASKINSTANCEID">
+                    <camunda:value>23238</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="service_id">
+                    <camunda:value>22548</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="EXECNUMBER">
+                    <camunda:value>1</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="UBIQUBEID">
+                    <camunda:value>CPEA992</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="customer_id">
+                    <camunda:value>1</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="SERVICEINSTANCEID">
+                    <camunda:value>22548</camunda:value>
+                  </camunda:entry>
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail" />
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0i73c9a</bpmn:incoming>
+      <bpmn:outgoing>Flow_1fs5tqs</bpmn:outgoing>
+    </bpmn:serviceTask>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLACEHOLDER_PROCESS_ID">
+      <bpmndi:BPMNEdge id="Flow_1ba4dw4_di" bpmnElement="Flow_1ba4dw4">
+        <di:waypoint x="28" y="110" />
+        <di:waypoint x="200" y="110" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1gsa91e_di" bpmnElement="Flow_1gsa91e">
+        <di:waypoint x="300" y="110" />
+        <di:waypoint x="340" y="110" />
+        <di:waypoint x="340" y="-40" />
+        <di:waypoint x="425" y="-40" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0i73c9a_di" bpmnElement="Flow_0i73c9a">
+        <di:waypoint x="475" y="-40" />
+        <di:waypoint x="530" y="-40" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1fs5tqs_di" bpmnElement="Flow_1fs5tqs">
+        <di:waypoint x="630" y="-40" />
+        <di:waypoint x="701" y="-40" />
+        <di:waypoint x="701" y="130" />
+        <di:waypoint x="772" y="130" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_17f8nuh_di" bpmnElement="Flow_17f8nuh">
+        <di:waypoint x="450" y="-15" />
+        <di:waypoint x="450" y="130" />
+        <di:waypoint x="772" y="130" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Event_1q7bv3s_di" bpmnElement="Event_1q7bv3s">
+        <dc:Bounds x="772" y="112" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="765" y="155" width="51" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1qhj7w2_di" bpmnElement="Gateway_1qhj7w2" isMarkerVisible="true">
+        <dc:Bounds x="425" y="-65" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="407" y="-102.5" width="86" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1614338205085_di" bpmnElement="Activity_0hl4lpq">
+        <dc:Bounds x="530" y="-80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="-8" y="92" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="-19" y="135" width="56" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1614337509304_di" bpmnElement="Activity_1wqg4f2">
+        <dc:Bounds x="200" y="70" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

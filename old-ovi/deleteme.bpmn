@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="PLACEHOLDER_PROCESS_ID" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1" name="Start Event">
+      <bpmn:outgoing>Flow_00yx7jh</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:intermediateCatchEvent id="Event_17cjg9k" name="Event_17cjg9k">
+      <bpmn:signalEventDefinition id="SignalEventDefinition_00wfac7" signalRef="Signal_00wfac7" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:intermediateCatchEvent id="Event_1epp4sr" name="Event_1epp4sr">
+      <bpmn:incoming>Flow_00yx7jh</bpmn:incoming>
+      <bpmn:signalEventDefinition id="SignalEventDefinition_06arhff" signalRef="Signal_06arhff" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_00yx7jh" sourceRef="StartEvent_1" targetRef="Event_1epp4sr" />
+    <bpmn:intermediateCatchEvent id="Event_1qcdsm7" name="Event_1qcdsm7">
+      <bpmn:signalEventDefinition id="SignalEventDefinition_0g5orry" signalRef="Signal_0g5orry" />
+    </bpmn:intermediateCatchEvent>
+  </bpmn:process>
+  <bpmn:signal id="Signal_00wfac7" name="Signal_00wfac7" />
+  <bpmn:signal id="Signal_06arhff" name="Signal_06arhff" />
+  <bpmn:signal id="Signal_0g5orry" name="Signal_0g5orry" />
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLACEHOLDER_PROCESS_ID">
+      <bpmndi:BPMNEdge id="Flow_00yx7jh_di" bpmnElement="Flow_00yx7jh">
+        <di:waypoint x="308" y="160" />
+        <di:waypoint x="670" y="160" />
+        <di:waypoint x="670" y="430" />
+        <di:waypoint x="1022" y="430" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="272" y="142" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="261" y="185" width="56" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_17cjg9k_di" bpmnElement="Event_17cjg9k">
+        <dc:Bounds x="232" y="62" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="213" y="105" width="74" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1epp4sr_di" bpmnElement="Event_1epp4sr">
+        <dc:Bounds x="1022" y="412" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1002" y="455" width="76" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1qcdsm7_di" bpmnElement="Event_1qcdsm7">
+        <dc:Bounds x="442" y="102" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="420" y="145" width="81" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

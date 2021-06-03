@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="PLACEHOLDER_PROCESS_ID" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1" name="Start Event">
+      <bpmn:outgoing>Flow_195qjv9</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:serviceTask id="Activity_15cinds" name="p1 (testWFSample)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">PLACEHOLDER_UBIQUBE_ID</camunda:entry>
+              <camunda:entry key="serviceName">Process/workflows/testWFSample/testWFSample</camunda:entry>
+              <camunda:entry key="processName">Process/workflows/testWFSample/Process_p1</camunda:entry>
+              <camunda:entry key="processType">CREATE</camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="var_name">abc</camunda:entry>
+                  <camunda:entry key="var_name2">2</camunda:entry>
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail" />
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_195qjv9</bpmn:incoming>
+      <bpmn:outgoing>Flow_15d982e</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:endEvent id="Event_1ezif17" name="End Event">
+      <bpmn:incoming>Flow_0ch1rkt</bpmn:incoming>
+      <bpmn:incoming>Flow_04e8su1</bpmn:incoming>
+      <bpmn:incoming>Flow_1x5198q</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_195qjv9" sourceRef="StartEvent_1" targetRef="Activity_15cinds" />
+    <bpmn:serviceTask id="Activity_0zq8clb" name="create instance (Helloworld)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">PLACEHOLDER_UBIQUBE_ID</camunda:entry>
+              <camunda:entry key="serviceName">Process/Tutorials/Helloworld/Helloworld</camunda:entry>
+              <camunda:entry key="processName">Process/Helloworld/Process_create_instance</camunda:entry>
+              <camunda:entry key="processType">CREATE</camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="name">bob</camunda:entry>
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail" />
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0yx8m6n</bpmn:incoming>
+      <bpmn:outgoing>Flow_0ch1rkt</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Activity_1sdo9fl" name="create instance (Helloworld)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">PLACEHOLDER_UBIQUBE_ID</camunda:entry>
+              <camunda:entry key="serviceName">Process/Tutorials/Helloworld/Helloworld</camunda:entry>
+              <camunda:entry key="processName">Process/Helloworld/Process_create_instance</camunda:entry>
+              <camunda:entry key="processType">CREATE</camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="name">bub</camunda:entry>
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail" />
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_17z8ng3</bpmn:incoming>
+      <bpmn:outgoing>Flow_04e8su1</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="Gateway_1acxdz1" name="Gateway_1acxdz1" default="Flow_17z8ng3">
+      <bpmn:incoming>Flow_15d982e</bpmn:incoming>
+      <bpmn:outgoing>Flow_0yx8m6n</bpmn:outgoing>
+      <bpmn:outgoing>Flow_17z8ng3</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1mzu5ce</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="Flow_15d982e" sourceRef="Activity_15cinds" targetRef="Gateway_1acxdz1" />
+    <bpmn:sequenceFlow id="Flow_0yx8m6n" name="p1 (testWFSample) == Warning" sourceRef="Gateway_1acxdz1" targetRef="Activity_0zq8clb">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${JSON(Activity_15cinds).prop("status").value() == 'WARNING'}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_17z8ng3" name="Ping (PingME) != Warning" sourceRef="Gateway_1acxdz1" targetRef="Activity_1sdo9fl" />
+    <bpmn:sequenceFlow id="Flow_0ch1rkt" sourceRef="Activity_0zq8clb" targetRef="Event_1ezif17" />
+    <bpmn:sequenceFlow id="Flow_04e8su1" sourceRef="Activity_1sdo9fl" targetRef="Event_1ezif17" />
+    <bpmn:serviceTask id="Activity_06xlei0" name="Ping (PingME)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">PLACEHOLDER_UBIQUBE_ID</camunda:entry>
+              <camunda:entry key="serviceName">Process/WPY/WF_Python/WF_Python</camunda:entry>
+              <camunda:entry key="processName">Process/WPY/WF_Python</camunda:entry>
+              <camunda:entry key="processType">CREATE</camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="device_ip_address">127.0.0.1</camunda:entry>
+                  <camunda:entry key="test" />
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail" />
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1mzu5ce</bpmn:incoming>
+      <bpmn:outgoing>Flow_1x5198q</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_1mzu5ce" name="p1 (testWFSample) == Warning" sourceRef="Gateway_1acxdz1" targetRef="Activity_06xlei0" />
+    <bpmn:sequenceFlow id="Flow_1x5198q" sourceRef="Activity_06xlei0" targetRef="Event_1ezif17" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLACEHOLDER_PROCESS_ID">
+      <bpmndi:BPMNEdge id="Flow_1x5198q_di" bpmnElement="Flow_1x5198q">
+        <di:waypoint x="970" y="420" />
+        <di:waypoint x="1392" y="420" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1mzu5ce_di" bpmnElement="Flow_1mzu5ce">
+        <di:waypoint x="745" y="430" />
+        <di:waypoint x="870" y="430" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="791" y="350" width="78" height="40" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_04e8su1_di" bpmnElement="Flow_04e8su1">
+        <di:waypoint x="960" y="640" />
+        <di:waypoint x="1071" y="640" />
+        <di:waypoint x="1071" y="420" />
+        <di:waypoint x="1392" y="420" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ch1rkt_di" bpmnElement="Flow_0ch1rkt">
+        <di:waypoint x="960" y="160" />
+        <di:waypoint x="1071" y="160" />
+        <di:waypoint x="1071" y="420" />
+        <di:waypoint x="1392" y="420" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_17z8ng3_di" bpmnElement="Flow_17z8ng3">
+        <di:waypoint x="720" y="455" />
+        <di:waypoint x="720" y="640" />
+        <di:waypoint x="860" y="640" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="695" y="545" width="81" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0yx8m6n_di" bpmnElement="Flow_0yx8m6n">
+        <di:waypoint x="720" y="405" />
+        <di:waypoint x="720" y="160" />
+        <di:waypoint x="860" y="160" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="731" y="240" width="78" height="40" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_15d982e_di" bpmnElement="Flow_15d982e">
+        <di:waypoint x="550" y="430" />
+        <di:waypoint x="695" y="430" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_195qjv9_di" bpmnElement="Flow_195qjv9">
+        <di:waypoint x="238" y="430" />
+        <di:waypoint x="450" y="430" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="202" y="412" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="191" y="455" width="56" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1613584394386_di" bpmnElement="Activity_15cinds">
+        <dc:Bounds x="450" y="390" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1ezif17_di" bpmnElement="Event_1ezif17">
+        <dc:Bounds x="1392" y="402" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1385" y="445" width="51" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1613584445729_di" bpmnElement="Activity_0zq8clb">
+        <dc:Bounds x="860" y="120" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1613584458465_di" bpmnElement="Activity_1sdo9fl">
+        <dc:Bounds x="860" y="600" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1acxdz1_di" bpmnElement="Gateway_1acxdz1" isMarkerVisible="true">
+        <dc:Bounds x="695" y="405" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="765" y="455" width="90" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1613584511202_di" bpmnElement="Activity_06xlei0">
+        <dc:Bounds x="870" y="390" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
