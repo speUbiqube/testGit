@@ -1,0 +1,26 @@
+<ObjectDefinition>
+  <variables frozen="0"/>
+  <example/>
+  <process name="Process/workflows/_/Process_test">
+    <displayName>test</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <process name="Process/workflows/_/Process_test2">
+    <displayName>test2</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <serviceTaskType>php</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <name>Test</name>
+    <group/>
+  </information>
+</ObjectDefinition>

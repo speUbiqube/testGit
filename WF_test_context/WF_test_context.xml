@@ -1,0 +1,36 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="var" name="params.var" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example/>
+  <process name="Process/workflows/WF_test_context/Process_Create">
+    <displayName>Create</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Task.py">
+      <processPath>/opt/fmc_repository/Process/workflows/WF_test_context/Process_Create/Tasks</processPath>
+      <displayName>Task</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/WF_test_context/Process_Update">
+    <displayName>Update</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_task.py">
+      <processPath>/opt/fmc_repository/Process/workflows/WF_test_context/Process_Update/Tasks</processPath>
+      <displayName>task</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <serviceTaskType>python</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <name>WF test context</name>
+    <group/>
+  </information>
+</ObjectDefinition>

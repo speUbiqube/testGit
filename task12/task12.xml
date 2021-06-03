@@ -1,0 +1,32 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="compo" name="params.compo" startIncrement="0" type="Composite" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="1" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" selector="params.int" displayNameHeader="" fullDisplayName="" default="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <behaviors>
+        <behaviour arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" editable="false" visible="true" displayName="compo" displayOrder="1" maxLength="0" isMandatory="false" isUserLocked="false" name="params.compo" selectorValue="0" startIncrement="0" type="Password"/>
+        <behaviour arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" editable="false" visible="true" displayName="compo" displayOrder="1" maxLength="0" isMandatory="false" isUserLocked="false" name="params.compo" selectorValue="1" startIncrement="0" type="Integer"/>
+      </behaviors>
+    </variable>
+    <variable displayName="ede" name="params.int" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="2" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example/>
+  <process name="Process/workflows/task12/Process_AAAA">
+    <displayName>AAAAAE</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_.php">
+      <processPath>/opt/fmc_repository/Process/workflows/task12/Process_AAAA/Tasks</processPath>
+      <displayName></displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <serviceTaskType>php</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <name>task12</name>
+    <group/>
+  </information>
+</ObjectDefinition>

@@ -1,0 +1,24 @@
+<ObjectDefinition>
+  <variables frozen="0"/>
+  <example/>
+  <process name="Process/workflows/oonewWFoo/Process_pro">
+    <displayName>pro</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="address_IMPORT.php">
+      <processPath>Process/workflows/oonewWFoo/Process_pro/Tasks</processPath>
+      <displayName>task1</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <serviceTaskType>php</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <name>oonewWFoo</name>
+    <group/>
+  </information>
+</ObjectDefinition>

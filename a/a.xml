@@ -1,0 +1,20 @@
+<ObjectDefinition>
+  <variables frozen="0"/>
+  <example/>
+  <process name="Process/workflows/a/Process_a">
+    <displayName>a</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <information>
+    <icon/>
+    <description>a</description>
+    <displayField>service_id</displayField>
+    <serviceTaskType>python</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <name>a</name>
+    <group/>
+  </information>
+</ObjectDefinition>

@@ -1,0 +1,37 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="int" name="params.int" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="0" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="composite" name="params.composite" startIncrement="0" type="Composite" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="1" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" selector="params.int" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <behaviors>
+        <behaviour arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" editable="false" visible="true" displayName="composite" displayOrder="1" maxLength="0" isMandatory="false" isUserLocked="false" name="params.composite" selectorValue="0" startIncrement="0" type="String">
+          <values>
+            <values displayValue="0 is set">0</values>
+            <values displayValue="123">1</values>
+          </values>
+        </behaviour>
+        <behaviour arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" editable="false" visible="true" displayName="composite" displayOrder="1" maxLength="0" isMandatory="false" isUserLocked="true" name="params.composite" selectorValue="1" startIncrement="0" type="String"/>
+      </behaviors>
+    </variable>
+  </variables>
+  <example/>
+  <process name="Process/workflows/compositery/Process_p1">
+    <displayName>p1</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_t1.php">
+      <processPath>/opt/fmc_repository/Process/workflows/compositery/Process_p1/Tasks</processPath>
+      <displayName>t1</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <serviceTaskType>php</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <name>compositery</name>
+    <group/>
+  </information>
+</ObjectDefinition>

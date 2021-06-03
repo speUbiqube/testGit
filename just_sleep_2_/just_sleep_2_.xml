@@ -1,0 +1,64 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="Sleep" name="params.sleep" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="5" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example/>
+  <process name="Process/workflows/just_sleep_2_/Process_sleep">
+    <displayName>sleep</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule>true</allowSchedule>
+    <task name="Task_sleep.php">
+      <processPath>/opt/fmc_repository/Process/workflows/just_sleep_2_/Process_sleep/Tasks</processPath>
+      <displayName>sleep</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/just_sleep_2_/Process_deleteme">
+    <displayName>deleteme</displayName>
+    <type>DELETE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_plopme.php">
+      <processPath>/opt/fmc_repository/Process/workflows/just_sleep_2_/Process_deleteme/Tasks</processPath>
+      <displayName>plopme</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/just_sleep_2_/Process_Update_sleep">
+    <displayName>Update_sleep</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_sleep.php">
+      <processPath>/opt/fmc_repository/Process/workflows/just_sleep_2_/Process_Update_sleep/Tasks</processPath>
+      <displayName>sleep</displayName>
+    </task>
+    <task name="Task_sleep2.php">
+      <processPath>/opt/fmc_repository/Process/workflows/just_sleep_2_/Process_Update_sleep/Tasks</processPath>
+      <displayName>sleep2</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/just_sleep_2_/Process_update_twice">
+    <displayName>update_twice</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_1.php">
+      <processPath>/opt/fmc_repository/Process/workflows/just_sleep_2_/Process_update_twice/Tasks</processPath>
+      <displayName>1</displayName>
+    </task>
+    <task name="Task_2.php">
+      <processPath>/opt/fmc_repository/Process/workflows/just_sleep_2_/Process_update_twice/Tasks</processPath>
+      <displayName>2</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>sleep</displayField>
+    <serviceTaskType>php</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <name>just_sleep_2_</name>
+    <group/>
+  </information>
+</ObjectDefinition>

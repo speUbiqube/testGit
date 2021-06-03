@@ -1,0 +1,44 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="string" name="V1" startIncrement="0" type="string" mandatoryArray="true" visible="true" description="string" groupSeparator="string" groupDisplayName="string" displayOrder="0" increment="0" refServiceURI="string" refDeviceIdVar="string" keepOnImport="true" editable="true" onlyDetailView="true" localVarNameMatch="string" remoteVarNameMatch="string" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" selector="string" defaultValueLong="0" displayNameHeader="string" fullDisplayName="string" default="string" isMandatory="true" isUserLocked="true" isGrouped="true" isSearchable="true" isUniqueGlobal="true">
+      <behaviors>
+        <behaviour arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" editable="true" visible="true" displayName="V1" displayOrder="string" maxLength="0" isMandatory="false" isUserLocked="false" name="V1" selectorValue="string" startIncrement="0" type="string"/>
+      </behaviors>
+      <indexVariables>
+        <var>string</var>
+      </indexVariables>
+      <sections>
+        <sections>string</sections>
+      </sections>
+      <classes>
+        <class>string</class>
+      </classes>
+      <values>
+        <values displayValue="string" displayValue_de="string" displayValue_en="string" displayValue_es="string" displayValue_fr="string" displayValue_ja="string">string</values>
+      </values>
+    </variable>
+  </variables>
+  <example>
+    <content>string</content>
+  </example>
+  <process name="Process/workflows/RSTA10351/P1">
+    <displayName>P1</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="string">
+      <processPath>string</processPath>
+      <displayName>T1</displayName>
+    </task>
+  </process>
+  <information>
+    <icon>null</icon>
+    <description>WF_RSTA10351.xml</description>
+    <displayField>service_id</displayField>
+    <serviceTaskType>php</serviceTaskType>
+    <order>10000</order>
+    <visibility>0</visibility>
+    <name>WF_RSTA10351.xml</name>
+    <group></group>
+  </information>
+</ObjectDefinition>

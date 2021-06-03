@@ -1,0 +1,51 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="ramm" name="params.ramm" startIncrement="0" type="File" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="ramm" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="スト" name="params.a" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="スト&#xa;&#xa;スト&#xa;&#xa;スト&#xa;&#xa;" groupSeparator="" groupDisplayName="" displayOrder="1" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" default="スト" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example/>
+  <process name="Process/workflows/ramm/Process_t1">
+    <displayName>t1</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule>true</allowSchedule>
+    <task name="Task_t1.php">
+      <processPath>/opt/fmc_repository/Process/workflows/ramm/Process_t1/Tasks</processPath>
+      <displayName>t1</displayName>
+    </task>
+    <task name="Task_t2.php">
+      <processPath>/opt/fmc_repository/Process/workflows/ramm/Process_t1/Tasks</processPath>
+      <displayName>t2</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/ramm/Process_t2">
+    <displayName>t2</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_t2.php">
+      <processPath>/opt/fmc_repository/Process/workflows/ramm/Process_t2/Tasks</processPath>
+      <displayName>t2</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/ramm/Process_アルノ">
+    <displayName>アルノ</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_アルノーテストアルノーテスト.php">
+      <processPath>/opt/fmc_repository/Process/workflows/ramm/Process_アルノ/Tasks</processPath>
+      <displayName>アルノーテストアルノーテスト</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description>aaaa</description>
+    <displayField>service_id</displayField>
+    <serviceTaskType>php</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <name>rammアルノーテスト</name>
+    <group/>
+  </information>
+</ObjectDefinition>
